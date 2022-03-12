@@ -107,7 +107,7 @@ export default function Results() {
                                         <td className="px-6 py-6 whitespace-nowrap text-sm text-gray-500">{result._source.capacityAdults || '-'}</td>
                                         <td className="px-6 py-6 whitespace-nowrap text-sm text-gray-500">{result._source.capacityKids || '-'}</td>
                                         <td className="px-6 py-6 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="#" className="no-underline text-white px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-400">
+                                            <a href={`/accommodations/${encodeURIComponent(result._id)}`} className="no-underline text-white px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-400">
                                                 View accommodation
                                             </a>
                                         </td>
